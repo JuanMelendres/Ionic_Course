@@ -19,8 +19,7 @@
         <ion-list>
           <ion-item
             *ngFor="let offer of offers"
-            [routerLink]="['/', 'places', 'tabs', 'offers', offer.id]"
-          >
+            [routerLink]="['/', 'places', 'tabs', 'offers', offer.id]">
             <ion-thumbnail slot="start">
               <ion-img [src]="offer.imageUrl"></ion-img>
             </ion-thumbnail>
