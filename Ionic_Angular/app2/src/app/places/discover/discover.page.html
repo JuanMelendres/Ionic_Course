@@ -63,4 +63,18 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <web-social-share show="true" share="options">Share</web-social-share>
+  <ion-button>share</ion-button>
+  <web-social-share [show]="true" [share]="options" (closed)="close()">
+    <i class="fab fa-facebook" slot="facebook" style="color: #3b5998; font-size: 1.6rem;"></i>
+    <i class="fab fa-twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem;"></i>
+    <i class="fab fa-pinterest" slot="pinterest" style="color: #bd081c; font-size: 1.6rem;"></i>
+    <i class="fab fa-linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem;"></i>
+    <i class="fab fa-reddit" slot="reddit" style="color: #cee3f8; font-size: 1.6rem;"></i>
+    <i class="fas fa-envelope" slot="email" style="color: #ff8ea3; font-size: 1.6rem;"></i>
+    <i class="fab fa-whatsapp-square" slot="whatsapp" style="color: #25D366; font-size: 1.6rem;"></i>
+    <i class="fab fa-hacker-news-square" slot="hackernews" style="color: #ff6000; font-size: 1.6rem;"></i>
+    <i class="far fa-copy" slot="copy" style="color: black; font-size: 1.6rem;"></i>
+  </web-social-share>
 </ion-content>

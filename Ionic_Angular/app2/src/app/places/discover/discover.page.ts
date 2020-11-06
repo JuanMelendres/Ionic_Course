@@ -24,4 +24,54 @@ export class DiscoverPage implements OnInit {
   onOpenMenu() {
     this.menuCtrl.toggle();
   }
+
+  share = {
+    displayNames: true,
+    config: [{
+      facebook: {
+        socialShareUrl: 'http://websocialshare.com',
+        socialSharePopupWidth: 400,
+        socialSharePopupHeight: 400
+      }
+    },{
+      twitter: {
+        socialShareUrl: 'http://websocialshare.com',
+        socialSharePopupWidth: 300,
+        socialSharePopupHeight: 400
+      }
+    },{
+      reddit: {
+        socialShareUrl: 'http://websocialshare.com',
+        socialSharePopupWidth: 300,
+        socialSharePopupHeight: 500
+      }
+    },{
+      linkedin: {
+        socialShareUrl: 'http://websocialshare.com'
+      }
+    },{
+      pinterest: {
+        socialShareUrl: 'http://websocialshare.com'
+      }
+    },{
+      email: {
+        socialShareTo: 'david.dalbusco@outlook.com',
+        socialShareBody: 'http://websocialshare.com'
+      }
+    }, {
+      whatsapp: {
+        socialShareText: 'Hello, how are you?',
+        socialShareUrl: 'http://websocialshare.com'
+      }
+    },{
+      copy: {
+        socialShareUrl: 'http://websocialshare.com'
+      }
+    },{
+        hackernews: {
+            socialShareText: 'Web Social Share',
+            socialShareUrl: 'http://websocialshare.com'
+        }
+    }]
+  };
 }
